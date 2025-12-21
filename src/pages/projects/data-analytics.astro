@@ -1,0 +1,61 @@
+---
+import '@fortawesome/fontawesome-free/css/all.min.css';
+---
+<!-- data-analytics -->
+ <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/data-analytics.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="left-col">
+                <nav>
+                    <i class="fa-solid fa-arrow-left back-btn"></i>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">My Stats</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section>
+                <header>
+                    <i class="fa-solid fa-bars menu-btn"></i>
+                    <p class="logo">Logo</p>
+                </header>
+                <div class="cv">
+                    <div class="content">
+                        <h1>Data Analytics Dashboard</h1>
+                        <p>Welcome to your data analytics dashboard. Here you can monitor key metrics and gain insights into your data.</p>
+                        <a href="/" class="cta"> Go to my stats</a>
+                    </div>
+                </div>
+            </section>
+        </div> 
+        <script>
+            interface Props {
+                menuBtn: string,
+                backBtn: string,
+                leftCol: string
+            }
+            const menuBtn = document.querySelector('.menu-btn')
+            const backBtn = document.querySelector('.back-btn')
+            const leftCol = document.querySelector('nav')
+
+            menuBtn.addEventListener('click', () => {
+                leftCol.style.transform = 'translateX(0)'
+            })
+
+            backBtn.addEventListener('click', () => {
+                leftCol.style.transform = 'translateX(-100%)'
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+---
+import Section from "./Section.astro"
+---
+<Section>
+  <footer>
+    <div class="icons-container">
+      <!-- Add each icon for email, github, x and linkedin -->
+      <!-- Each should be an img tag wrapped in an anchor tag -->
+       <ul>
+        <li><a href="/"><i class="fa-solid fa-envelope"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="/"><i class="fa-brands fa-linkedin"></i></a></li>
+       </ul>   
+    </div>
+    <p class="rights-text">Copyright <i class="fa-solid fa-copyright"></i> 2025 Astra All rights reserved</p>
+    <p class="credit-text">Images: <a href="http://fontawesome.com" target="_blank" rel="noopener noreferrer">fontawesome.com</a></p>
+  </footer>
+</Section>
+
+<style>
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .icons-container > ul {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+            list-style-type: none;
+        }
+        .icons-container > ul > li > a > i {
+            font-size: 27px;
+            color: var(--dark);
+            text-decoration: none;
+        }
+        .credit-text{
+            color: var(--light);
+            margin-top: 8px;
+            font-size: 14px
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .icons-container {
+                flex-direction: column;
+                gap: 4px;
+                img {
+                    height: 20px;;
+                }
+            }
+            
+        }
+    }
+</style>

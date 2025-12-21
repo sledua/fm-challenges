@@ -1,0 +1,34 @@
+[
+    {
+      "title": "Простий лендінг пейдж",
+      "slug": "simple-lending-page",
+      "description": "Простий лендінг пейдж для демонстрації основних концепцій вебдизайну та розробки. Використовує HTML і CSS для створення привабливого інтерфейсу. А також адаптивний дизайн для мобільних пристроїв. І включає форми для збору інформації від користувачів.",
+      "image": "/projects/simple-lending-page-tab.png",
+      "githubURL": "https://github.com/jamesqquick",
+      "liveSiteURL": "/projects/simple-lending-page"
+    },
+    {
+      "title": "Звичайна картка як компонент",
+      "slug": "simpl-card-as-a-component",
+      "description": "Звичайна картка, створена як компонент для повторного використання в різних частинах вебзастосунку. Використовує HTML і CSS для стилізації.",
+      "image": "/projects/simple-card-mobile.png",
+      "githubURL": "https://github.com/jamesqquick",
+      "liveSiteURL": "/projects/simple-card"
+    },
+    {
+      "title": "Фронтенд частина для простого дашборду",
+      "slug": "data-analytics",
+      "description": "Фронтенд частина для простого дашборду, створена з використанням простого HTML та CSS. Включає компоненти для відображення даних, інтерактивні елементи та адаптивний дизайн.",
+      "image": "/projects/data-analytics-tab.png",
+      "githubURL": "https://github.com/jamesqquick",
+      "liveSiteURL": "/projects/data-analytics"
+    },
+    {
+      "title": "DevTools Chrome Extension",
+      "slug": "project-3",
+      "description": "A Chrome DevTools extension for monitoring API requests in real-time. It provides live request logging and response analysis for developers.",
+      "image": "/projects/project-3.png",
+      "githubURL": "https://github.com/jamesqquick",
+      "liveSiteURL": "https://jamesqquick.com"
+    }
+  ]

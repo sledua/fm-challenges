@@ -1,0 +1,15 @@
+---
+import Section from "../components/Section.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Зв'язатися зі мною";
+const email = "art.sled.ua@gmail.com";
+---
+
+<Layout>
+    <Section>
+        <h1>{title}</h1>
+        <p>Ви завжди можете мені написати: <a href={`mailto:${email}`}>{email}</a>.</p>
+        <img src="" alt="">
+    </Section>
+</Layout>

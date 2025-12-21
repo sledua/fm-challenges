@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Section from './Section.astro';
+import HorizontalSeparator from './HorizontalSeparator.astro';
+import BlogCard from './BlogCard.astro';
+import HeaderSection from './HeaderSection.astro';
+
+const posts = await getCollection('blog');
+const heading = 'Blog';
+const cta = {text: 'View blog', href:"/blog"};
+---
+
+<Section>
+  <HeaderSection heading={heading} cta={cta}/>
+  {posts.map(post => (
+    <BlogCard blog={post}/>
+    <HorizontalSeparator/>
+  ))}
+</Section>

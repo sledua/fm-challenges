@@ -1,0 +1,57 @@
+---
+import Container from "./Container.astro";
+interface Props {
+    title?: string;
+}
+const { title = "Мій Вебсайт" } = Astro.props;
+---
+<nav class="nav">
+<Container>
+    <div class="nav-container">
+      <div class="logo">
+                <a href="/">{title}</a>
+            </div>
+            <ul class="nav-items">
+                <li><a href="/blog">Блог</a></li>
+                <li><a href="/projects">Проекти</a></li>
+                <li><a href="/contact">Контакт</a></li>
+            </ul>
+    </div>
+</Container>
+</nav>
+<style>
+  nav {
+    background: var(--secondary);
+
+    img {
+      height: 20px;
+    }
+
+    .nav-container {
+      display: flex;
+      padding: 24px 0;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-items {
+        list-style-type: none;
+        display: flex;
+        gap: 24px;
+
+        a {
+          text-decoration: none;
+          color: var(--dark);
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        & {
+          flex-direction: column;
+          gap: 16px;
+        }
+        
+      }
+    }
+  }
+</style>
