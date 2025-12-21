@@ -1,0 +1,12 @@
+node
+node_modules
+npm-debug.log
+ASSISTANT_LOG.md
+package-lock.json
+.env
+.DS_Store
+.vscode/
+dist/
+coverage/
+.idea/
+.astro/
