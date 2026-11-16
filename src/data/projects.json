@@ -11,7 +11,7 @@
       "title": "Звичайна картка як компонент",
       "slug": "simpl-card-as-a-component",
       "description": "Звичайна картка, створена як компонент для повторного використання в різних частинах вебзастосунку. Використовує HTML і CSS для стилізації.",
-      "image": "/projects/simple-card-mobile.png",
+      "image": "/projects/simple-card-mobile-tab.png",
       "githubURL": "https://github.com/jamesqquick",
       "liveSiteURL": "/projects/simple-card"
     },
@@ -24,11 +24,11 @@
       "liveSiteURL": "/projects/data-analytics"
     },
     {
-      "title": "DevTools Chrome Extension",
-      "slug": "project-3",
-      "description": "A Chrome DevTools extension for monitoring API requests in real-time. It provides live request logging and response analysis for developers.",
-      "image": "/projects/project-3.png",
+      "title": "Продаж автомобілів",
+      "slug": "car-sales-site",
+      "description": "Сайт для продажу автомобілів, створений з використанням HTML і CSS. Включає функції пошуку, фільтрації та відображення інформації про автомобілі.",
+      "image": "/projects/car-sales-site-tab.png",
       "githubURL": "https://github.com/jamesqquick",
-      "liveSiteURL": "https://jamesqquick.com"
+      "liveSiteURL": "/projects/car-sales-site"
     }
   ]
